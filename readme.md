@@ -65,14 +65,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Screenshot(s):**
 
 [Screenshot 1 - Homepagina Desktop](images/01-Homepagina-Desktop.png)
-
-![Screenshot 1 - Homepagina Desktop](images/01-Homepagina-Desktop.png)
-![Screenshot 2 - Homepagina Mobile](images/02-Homepagina-Mobile.png)
-![Screenshot 3 - Homepagina Desktop](images/03-About-Desktop.png)
-![Screenshot 4 - Homepagina Mobile](images/04-About-Mobile.png)
+[Screenshot 2 - Homepagina Mobile](images/02-Homepagina-Mobile.png)
+[Screenshot 3 - Homepagina Desktop](images/03-About-Desktop.png)
+[Screenshot 4 - Homepagina Mobile](images/04-About-Mobile.png)
 
 
 
 **Breakdown-schets(en):**
 
-![-Voorlopige Breakdown schets van de Mobiele Homepagina-](images/05-Homepage_Mobile-Breakdown_schets.png)
+[-Voorlopige Breakdown schets van de Mobiele Homepagina-](images/05-Homepage_Mobile-Breakdown_schets.png)
