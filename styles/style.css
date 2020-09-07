@@ -3,6 +3,87 @@
   box-sizing:border-box;  
 }
 
-h1 {
-  color: blue;
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
 }
+
+main, footer {
+  padding: 50px 20px;
+}
+
+/* Mobile Typography */
+
+h1 {
+  color: #4a494a;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+}
+
+h2 {
+  color: #4a494a;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+}
+
+h3 {
+  color: #4a494a;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+h4 {
+  color: #4a494a;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a494a;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+a {
+  margin: 0;
+  padding: 12px 20px 10px;
+  border: 1px solid #4a494a;
+  text-transform: uppercase;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a494a;
+  font-size: 12px;
+  line-height: 17px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+a:hover {
+  background: #4a494a;
+  color: #FFFFFF;
+}
+
+form label {
+  color: #4a494a;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form input {
+  outline: none;
+  border: none;
+  background: none !important;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  padding: 20px 0 10px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a494a;
+  font-size: 16px;
+}
+
+form input::placeholder {
+  color: #cfcfcf;
+}
+
+/* Desktop Typography */
