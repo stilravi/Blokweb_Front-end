@@ -145,52 +145,55 @@ header nav ul {
   list-style-type: none;
 }
 
+header nav ul a {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+header nav ul a:hover {
+  border: none;
+  background: none;
+}
+
 header nav ul li:first-of-type {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
-/******************* Main ****************/
-
-main {
-  padding: 0 20px;
+header nav ul img {
+  width: 1.5em;
+  margin-top: 10px;
 }
 
-main section:nth-child(1) {
+/******************* Sections ****************/
+
+section.thumbnail:nth-child(2) {
   background: url(../images/marcelo-douchebags-02.jpg);
-  padding: 250px 20px;
 }
 
-main section:nth-child(2) {
+section.thumbnail:nth-child(3) {
   background: url(../images/douchebags-hugger.jpg);
-  padding: 80px 20px;
 }
 
-main section:nth-child(3) {
+section.thumbnail:nth-child(4) {
   background: url(../images/douchebags-snow.jpg);
-  padding: 80px 20px;
 }
 
-main section:nth-child(4) {
+section.thumbnail:nth-child(5) {
   background: url(../images/douchebags-field.jpg);
-  padding: 250px 20px;
 }
 
-main section:nth-child(1),
-main section:nth-child(2),
-main section:nth-child(3),
-main section:nth-child(4) {
+section.thumbnail {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: cover !important;
+  background-position: center center !important;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
+  padding: 80px 20px;
 }
 
-main section:nth-child(1):after,
-main section:nth-child(2):after,
-main section:nth-child(3):after,
-main section:nth-child(4):after {
+section.thumbnail:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -201,51 +204,107 @@ main section:nth-child(4):after {
   z-index: 1;
 }
 
-main section:nth-child(1) h2,h4,
-main section:nth-child(2) h2,h4,
-main section:nth-child(3) h2,h4,
-main section:nth-child(4) h2,h4  {
+section.thumbnail h2,h4 {
   color: white;
   z-index: 2;
   margin-bottom: 25px;
   position: relative;
 }
 
-main section:nth-child(1) a ,
-main section:nth-child(2) a ,
-main section:nth-child(3) a ,
-main section:nth-child(4) a  {
+section.thumbnail a  {
   color: white;
   border-color: white;
   z-index: 2;
   position: relative;
 }
 
-main section:nth-child(5) {
+/******************* Main ****************/
+
+main {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 0;
+  justify-content: space-between;
+  padding: 50px 20px;
 }
 
-main section:nth-child(5) h2,p {
+main h2 {
   text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
 }
 
-main section:nth-child(5) article {
-  max-width: 50%;
+main h2:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+  height: 2px;
+  width: 40px;
+  background: #dbdbdb;
+}
+
+main p {
   text-align: center;
+  margin: auto;
+  max-width: 50ch;
 }
 
-main section:nth-child(5) article img {
+main article {
+  max-width: 48%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+main article ul {
+  position: absolute;
+  list-style-type: none;
+}
+
+main article li {
+  background: #7e7e7e;
+  color: white;
+  margin-top: 10px;
+  padding: 5px 10px 2px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+main article li:first-of-type {
+  padding: 3px 0;
+  background: #532B5D;
+}
+
+main article li img {
+  width: 1em;
+  margin-right: 5px;
+}
+
+main article figure {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+main article img {
   max-width: 100%;
 }
 
-main section:nth-child(5) article h4 {
-  color: #4a494a;
+main article h3 {
+  margin-bottom: 1.8em;
+  position: relative;
 }
 
-
-
+main article h3:last-of-type:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 0.05em;
+  background: #dbdbdb;
+  bottom: -15px;
+  left: calc(50% - 40%);
+}
 
 /******************* Footer ****************/
 
