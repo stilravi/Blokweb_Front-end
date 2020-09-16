@@ -126,6 +126,7 @@ header section a {
 }
 
 header nav {
+  position:-webkit-sticky; position:sticky; top:0;
   max-width: 1280px;
   margin: auto;
   height: 6em;
@@ -167,21 +168,24 @@ header nav ul img {
 
 /******************* Sections ****************/
 
-section.thumbnail:nth-child(2) {
+body > section:first-of-type {
   background: url(../images/marcelo-douchebags-02.jpg);
 }
 
-section.thumbnail:nth-child(3) {
+body > section:nth-of-type(2) {
   background: url(../images/douchebags-hugger.jpg);
 }
 
-section.thumbnail:nth-child(4) {
+body > section:nth-of-type(3) {
   background: url(../images/douchebags-snow.jpg);
 }
 
-section.thumbnail:nth-child(5) {
+body > section:nth-of-type(4) {
   background: url(../images/douchebags-field.jpg);
 }
+
+/* Ik gebruik hier een Class zodat hij 
+niet elke section op de pagina pakt. */ 
 
 section.thumbnail {
   background-repeat: no-repeat;
@@ -204,11 +208,20 @@ section.thumbnail:after {
   z-index: 1;
 }
 
-section.thumbnail h2,h4 {
+section.thumbnail h2 {
   color: white;
   z-index: 2;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   position: relative;
+}
+
+section.thumbnail p {
+  color: white;
+  z-index: 2;
+  margin-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.7em;
 }
 
 section.thumbnail a  {
@@ -221,10 +234,13 @@ section.thumbnail a  {
 /******************* Main ****************/
 
 main {
+  padding: 50px 20px;
+}
+
+main section:first-of-type {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 20px;
 }
 
 main h2 {
@@ -304,6 +320,48 @@ main article h3:last-of-type:after {
   background: #dbdbdb;
   bottom: -15px;
   left: calc(50% - 40%);
+}
+
+main article > img {
+  width: 1em;
+  display: block;
+  margin: auto;
+}
+
+section:nth-child(7) {
+  padding: 0 20px 50px;
+  position: relative;
+}
+
+section:nth-child(7) figure {
+  position: relative;
+}
+
+section:nth-child(7) figure:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section:nth-child(7) img {
+  width: 100%;
+  height: auto;
+}
+
+section:nth-child(7) a {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  border-color: white;
+  z-index: 2;
 }
 
 /******************* Footer ****************/
