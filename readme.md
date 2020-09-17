@@ -42,7 +42,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+- [Screenshot 1 - Homepagina Mobiel (tot zo ver bijna af)](images/readme/week1/01-Homepagina-Desktop.jpg)
 
 ### Agenda voor meeting
 
@@ -64,13 +64,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-- [Screenshot 1 - Homepagina Desktop](images/01-Homepagina-Desktop.jpg)
-- [Screenshot 2 - Homepagina Mobile](images/02-Homepagina-Mobile.jpg)
-- [Screenshot 3 - About pagina Desktop](images/03-About-Desktop.png)
-- [Screenshot 4 - About pagina Mobile](images/04-About-Mobile.png)
+- [Screenshot 1 - Homepagina Desktop](images/readme/week1/01-Homepagina-Desktop.jpg)
+- [Screenshot 2 - Homepagina Mobile](images/readme/week1/02-Homepagina-Mobile.jpg)
+- [Screenshot 3 - About pagina Desktop](images/readme/week1/03-About-Desktop.png)
+- [Screenshot 4 - About pagina Mobile](images/readme/week1/04-About-Mobile.png)
 
 
 
 **Breakdown-schets(en):**
 
-- [Voorlopige Breakdown schets van de Mobiele Homepagina](images/05-Homepage_Mobile-Breakdown_schets.png)
+- [Voorlopige Breakdown schets van de Mobiele Homepagina](images/readme/week1/05-Homepage_Mobile-Breakdown_schets.png)
