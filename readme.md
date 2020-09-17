@@ -49,8 +49,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Wij hebben samen met de "C" groep een agenda gemaakt met punten waar wij allemaal wel tegen aanlopen of wat nog
 een beetje onduidelijk is. De lijst volgt hieronder:
 
-- Item 1
-- Item 2
+- Dingen naast elkaar zetten. Op mobiel bijvoorbeeld 2 en dekstop 4
+ - Hoe kun je het beste het voor elkaar krijgen dat op desktop 4 items naast elkaar staan en op mobiel 2? 
+ Moet dit bijvoorbeeld met Media Queries, Flexbox of CSS grid?
+- Hoe kun je makkelijker zien nth gebeuren
+- Mag je classes  gebruiken
+- Moet je hamburger laten werken? 
+- Hoe zet je het om in een hamburgermenu
+- Flexbox vragen, naast elkaar zetten bijvoorbeeld.
 
 ### Verslag van meeting
 
