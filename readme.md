@@ -42,11 +42,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-- [Screenshot 1 - Homepagina Mobiel (tot zo ver bijna af)](images/readme/week1/01-Homepagina-Desktop.jpg)
+- [Screenshot 1 - Homepagina Mobiel (tot zo ver bijna af)](images/readme/week1/mobiel-homepage.jpg)
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
+Wij hebben samen met de "C" groep een agenda gemaakt met punten waar wij allemaal wel tegen aanlopen of wat nog
+een beetje onduidelijk is. De lijst volgt hieronder:
+
+- Item 1
+- Item 2
 
 ### Verslag van meeting
 
