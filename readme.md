@@ -48,7 +48,7 @@ Wat ging minder goed?
 
 **Screenshot(s):**
 
-- [Screenshot 1 - Homepagina Mobiel (tot zo ver bijna af)](images/readme/week1/mobiel-homepage.jpg)
+- [Screenshot 1 - Homepagina Mobiel (tot zo ver bijna af)](images/readme/week3/mobiel-homepage.jpg)
 
 ### Agenda voor meeting
 
