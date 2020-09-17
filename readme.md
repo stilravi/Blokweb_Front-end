@@ -38,7 +38,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Wat ging goed?
+- Het namaken van de website met HTML en CSS
+- Dingen naast elkaar zitten met Flexbox (niet alles)
+
+Wat ging minder goed?
+- Flexbox gebruiken voor responsive (mobiel naar desktop)
+- Ik heb overal nog veel Pixels gebruikt maar ik moet nog veel omzetten naar Em.
 
 **Screenshot(s):**
 
@@ -56,6 +62,7 @@ een beetje onduidelijk is. De lijst volgt hieronder:
 - Mag je classes  gebruiken
 - Moet je hamburger laten werken? 
 - Hoe zet je het om in een hamburgermenu
+    - Hoe krijg je het voor elkaar dat op Desktop alle menu items naast elkaar staan en dat op mobiel een hamburger menu te zien is.
 - Flexbox vragen, naast elkaar zetten bijvoorbeeld.
 
 ### Verslag van meeting
