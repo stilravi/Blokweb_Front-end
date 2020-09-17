@@ -50,7 +50,7 @@ Wij hebben samen met de "C" groep een agenda gemaakt met punten waar wij allemaa
 een beetje onduidelijk is. De lijst volgt hieronder:
 
 - Dingen naast elkaar zetten. Op mobiel bijvoorbeeld 2 en dekstop 4
- - Hoe kun je het beste het voor elkaar krijgen dat op desktop 4 items naast elkaar staan en op mobiel 2? 
+    - Hoe kun je het beste het voor elkaar krijgen dat op desktop 4 items naast elkaar staan en op mobiel 2? 
  Moet dit bijvoorbeeld met Media Queries, Flexbox of CSS grid?
 - Hoe kun je makkelijker zien nth gebeuren
 - Mag je classes  gebruiken
