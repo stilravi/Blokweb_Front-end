@@ -7,6 +7,10 @@
   outline: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 /******************* Typography ****************/
 
 h1 {
@@ -200,8 +204,11 @@ header nav > img:last-of-type {
 
 /* Mobile Nav Open */
 header > section#mobile-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  padding: 3em;
+  padding: 1.5em;
   position: fixed;
   top: 0;
   height: 100vh;
@@ -215,34 +222,33 @@ header > section#mobile-overlay {
   transform: translateX(0) !important; 
 }
 
-#mobile-overlay div {
+#mobile-overlay div:first-of-type {
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
-#mobile-overlay div > img {
+#mobile-overlay div:first-of-type > img {
   max-width: 10em;
 }
 
-#mobile-overlay div button {
+#mobile-overlay div:first-of-type button {
   background: none;
   border: none;
   cursor: pointer;
   transition: .5s;
 }
 
-#mobile-overlay div button:hover {
+#mobile-overlay div:first-of-type button:hover {
   transform: rotate(90deg);
 }
 
-#mobile-overlay div button img {
+#mobile-overlay div:first-of-type button img {
   width: 2em;
 }
 
 #mobile-overlay ul:first-of-type {
   text-align: right;
-  padding: 6em 0;
 }
 
 #mobile-overlay ul:first-of-type li {
@@ -256,6 +262,28 @@ header > section#mobile-overlay {
   padding: 0;
   border: none;
   background: none;
+  transition: .4s;
+  border-bottom: 2px solid transparent;
+}
+
+#mobile-overlay ul:first-of-type li a:hover {
+  color: black;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid black;
+}
+
+#mobile-overlay div:last-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+#mobile-overlay div:last-of-type a {
+  padding: 1.2em 2em;
+  text-align: center;
+  text-transform: none;
+  border-color: #dddddd;
+  font-size: 0.8em;
 }
 
 */****************** Main ****************/
