@@ -9,7 +9,7 @@
 	<title>Douchebags</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,35 +22,56 @@
 		<nav>
 			<img src="images/logo.svg">
 			<ul>
-				<li><a href="#"><img src="images/shopping-bag.svg"></a></li>
-				<li><a href="#"><img src="images/menu.svg"></a></li>
+				<li><button><img src="images/shopping-bag.svg"></button></li>
+				<li><button id="mobile-menu-button"><img src="images/menu.svg"></button></li>
 			</ul>
+			<ul>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Stories</a></li>
+				<li><a href="#">Db black</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+			<img src="images/shopping-bag.svg">
 		</nav>
+		<section id="mobile-overlay">
+			<div>
+				<img src="images/logo.svg">
+				<button id="mobile-close-button"><img src="images/close.svg"></button>
+			</div>
+			<ul>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Stories</a></li>
+				<li><a href="#">Db black</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</section>
 	</header>
-	<section class="thumbnail">
-		<p>Available now</p>
-		<h2>DB x Marcelo Vieira</h2>
-		<a href="#">Explore collection</a>
-	</section>
-	<section class="thumbnail">
-		<p>Small and smart</p>
-		<h2>The Hugger 20l</h2>
-		<a href="#">Shop</a>
-	</section>
-	<section class="thumbnail">
-		<p>Small and smart</p>
-		<h2>Upcoming Releases</h2>
-		<a href="#">Learn More</a>
-	</section>
-	<section class="thumbnail">
-		<p>DB x Marcelo Vieira</p>
-		<h2>Explore The Campaign</h2>
-		<a href="#">Read more</a>
-	</section>
 	<main>
-		<h2>New Arrivals</h2>
-		<p>On trips long and short, our Vieira Purple will give your bags the pop - and good luck - to stand out amongst the masses.</p>
+		<div>
+			<section>
+				<p>Available now</p>
+				<h2>DB x Marcelo Vieira</h2>
+				<a href="#">Explore collection</a>
+			</section>
+			<section>
+				<p>Small and smart</p>
+				<h2>The Hugger 20l</h2>
+				<a href="#">Shop</a>
+			</section>
+			<section>
+				<p>Small and smart</p>
+				<h2>Upcoming Releases</h2>
+				<a href="#">Learn More</a>
+			</section>
+			<section>
+				<p>DB x Marcelo Vieira</p>
+				<h2>Explore The Campaign</h2>
+				<a href="#">Read more</a>
+			</section>
+		</div>
 		<section>
+			<h2>New Arrivals</h2>
+			<p>On trips long and short, our Vieira Purple will give your bags the pop - and good luck - to stand out amongst the masses.</p>
 			<article>
 				<ul>
 					<li><img src="images/star.svg">Limited</li>
@@ -112,14 +133,14 @@
 				<img>
 			</article>
 		</section>
+		<section>
+			<figure>
+				<img src="images/douchbags-black.jpg">
+				<a href="#">Read more</a>
+			</figure>
+			<h3>DB Black</h3>
+		</section>
 	</main>
-	<section>
-		<figure>
-			<img src="images/douchbags-black.jpg">
-			<a href="#">Read more</a>
-		</figure>
-		<h3>DB Black</h3>
-	</section>
 	<script src="scripts/script.js"></script>
 </body>
 	
