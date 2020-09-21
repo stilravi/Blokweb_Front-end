@@ -193,7 +193,7 @@ header nav ul:last-of-type li:first-of-type{
 header nav ul:last-of-type a {
   text-transform: none;
   font-weight: 500;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 header nav > img:last-of-type {
@@ -208,7 +208,7 @@ header > section#mobile-overlay {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  padding: 1.5em;
+  padding: 2em;
   position: fixed;
   top: 0;
   height: 100vh;
