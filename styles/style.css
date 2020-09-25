@@ -43,19 +43,19 @@ p {
   font-family: 'Kumbh Sans', sans-serif;
   color: #4a494a;
   font-size: 0.9em;
-  line-height: 25px;
+  line-height: 1.6em;
 }
 
 /******************* Buttons / Links ****************/
 
 a {
   margin: 0;
-  padding: .8em 2em .7em;
+  padding: .9em 2em;
   border: 1px solid #4a494a;
   text-transform: uppercase;
   font-family: 'Kumbh Sans', sans-serif;
   color: #4a494a;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.5em;
   text-decoration: none;
   transition: .4s ease;
@@ -71,7 +71,7 @@ a:hover {
 form label {
   color: #4a494a;
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 0.75em;
   font-weight: 600;
 }
 
@@ -81,10 +81,10 @@ form input {
   background: none !important;
   border-bottom: 1px solid #dddddd;
   width: 100%;
-  padding: 20px 0 10px;
+  padding: 1.25em 0 0.6em;
   font-family: 'Kumbh Sans', sans-serif;
   color: #4a494a;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 form input::placeholder {
@@ -120,7 +120,7 @@ header section:first-of-type:after {
 header section:first-of-type h1,h4 {
   color: white;
   z-index: 2;
-  margin-bottom: 15px;
+  margin-bottom: .9em;
 }
 
 header section:first-of-type a {
@@ -130,18 +130,17 @@ header section:first-of-type a {
 }
 
 header nav {
-  position:-webkit-sticky; position:sticky; top:0;
   max-width: 1280px;
   margin: auto;
   height: 6em;
-  padding: 0 20px;
+  padding: 0 1.1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header nav > img:first-of-type {
-  width: 10em;
+  max-width: 10em;
   height: auto;
 }
 
@@ -163,7 +162,7 @@ header nav ul a:hover {
 }
 
 header nav ul:first-of-type li:first-of-type {
-  margin-right: 20px;
+  margin-right: 1.5em;
 }
 
 header nav ul button {
@@ -173,7 +172,7 @@ header nav ul button {
 
 header nav ul button img {
   width: 1.8em;
-  margin-top: 10px;
+  margin-top: .6em;
 }
 
 /* Desktop Nav */
@@ -268,7 +267,6 @@ header > section#mobile-overlay {
 
 #mobile-overlay ul:first-of-type li a:hover {
   color: black;
-  /* text-decoration: underline; */
   border-bottom: 2px solid black;
 }
 
@@ -289,13 +287,12 @@ header > section#mobile-overlay {
 */****************** Main ****************/
 
 main {
-  padding: 0 20px;
+  padding: 0 1.1em;
   max-width: 1280px;
   margin: auto;
 }
 
 main > div {
-  max-width: 980px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -325,7 +322,7 @@ main > div section:nth-child(-n+4) {
   background-position: center center;
   text-align: center;
   position: relative;
-  padding: 80px 20px;
+  padding: 7em 1.1em;
 }
 
 main > div section:nth-child(-n+4):after {
@@ -342,7 +339,7 @@ main > div section:nth-child(-n+4):after {
 main > div section:nth-child(-n+4) h2 {
   color: white;
   z-index: 2;
-  margin-bottom: 30px;
+  margin-bottom: 1.4em;
   position: relative;
 }
 
@@ -366,10 +363,10 @@ main > div section:nth-child(-n+4) a  {
 
 main > section:nth-of-type(1) {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   grid-column-gap: 1em;
   grid-row-gap: 2em;
-  padding: 80px 0;
+  padding: 5em 0;
 }
 
 main > section:nth-of-type(1) h2 {
@@ -446,7 +443,7 @@ main > section:nth-of-type(1) article h3:last-of-type:after {
   width: 80%;
   height: 0.05em;
   background: #dbdbdb;
-  bottom: -15px;
+  bottom: -1em;
   left: calc(50% - 40%);
 }
 
@@ -457,15 +454,118 @@ main > section:nth-of-type(1) article > img {
 }
 
 main > section:nth-of-type(2) {
-  padding: 0 20px 50px;
+  padding: 0 0 5em;
   position: relative;
 }
 
-main > section:nth-of-type(2) figure {
+main > section:nth-of-type(2) div {
+  background-image: url(../images/douchbags-black.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section:nth-of-type(2) a {
+  color: white;
+  border-color: white;
+  z-index: 2;
+}
+
+main > section:nth-of-type(2) article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0 1.1em;
+}
+
+main > section:nth-of-type(2) h2 {
+  margin: 1em 0;
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+main > section:nth-of-type(2) p {
+  margin: 0 0 1.5em;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+main > section:nth-of-type(2) ul {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a494a;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  text-align: center;
+  list-style-type: none;
+  flex-basis: 100%
+}
+
+main > section:nth-of-type(2) li {
+  margin-bottom: .5em;
+}
+
+main > section:nth-of-type(2) li:before {
+  content: "";
+  display: inline-block;
+  width: .9em;
+  height: .9em;
+  background-image: url(../images/check-2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: .5em;
+}
+
+main > section:nth-of-type(2) li:last-of-type:before {
+  background-image: url(../images/plus.svg);
+  margin-bottom: 0;
+  width: .7em;
+  height: .7em;
+}
+
+main > section:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1.1em;
+  padding: 0 0 5em;
+}
+
+main > section:nth-of-type(3) h2 {
+  text-align: center;
+  grid-column: 1 / -1;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+main > section:nth-of-type(3) h2:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+  height: 2px;
+  width: 40px;
+  background: #dbdbdb;
+} 
+
+main > section:nth-of-type(3) article {
+  padding: 8em 1.1em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-main > section:nth-of-type(2) figure:after {
+main > section:nth-of-type(3) article:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -476,19 +576,29 @@ main > section:nth-of-type(2) figure:after {
   z-index: 1;
 }
 
-main > section:nth-of-type(2) img {
-  width: 100%;
-  height: auto;
+main > section:nth-of-type(3) article:nth-of-type(1) {
+  background-image: url(../images/douchebags-photography.jpg);
 }
 
-main > section:nth-of-type(2) a {
+main > section:nth-of-type(3) article:nth-of-type(2) {
+  background-image: url(../images/douchebags-bike.jpg);
+}
+
+main > section:nth-of-type(3) article:nth-of-type(3) {
+  background-image: url(../images/douchebags-ski.jpg);
+}
+
+main > section:nth-of-type(3) article h3 {
+  flex-basis: 100%;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
   color: white;
+  margin-bottom: .5em;
+  z-index: 2;
+}
+
+main > section:nth-of-type(3) article a {
   border-color: white;
+  color: white;
   z-index: 2;
 }
 
@@ -500,11 +610,11 @@ main > section:nth-of-type(2) a {
 /* Breakpoint 1 */
 @media screen and (min-width: 640px) {
   main > section:nth-of-type(1) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
   }
 
   main > div {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
   }
 
   main > div section:first-of-type {
@@ -521,6 +631,15 @@ main > section:nth-of-type(2) a {
 
   main > div section:nth-of-type(4) {
     grid-column: 2 / 4;
+  }
+
+  main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main > section:nth-of-type(2) div {
+    padding: 12em 0;
   }
 }
 
@@ -543,6 +662,11 @@ main > section:nth-of-type(2) a {
   }
   
   main > section:nth-of-type(1) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  main > section:nth-of-type(3) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
   }
 }
