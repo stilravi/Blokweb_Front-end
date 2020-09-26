@@ -71,7 +71,7 @@ a:hover {
 form label {
   color: #4a494a;
   font-family: 'Playfair Display', serif;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: 600;
 }
 
@@ -81,14 +81,30 @@ form input {
   background: none !important;
   border-bottom: 1px solid #dddddd;
   width: 100%;
-  padding: 1.25em 0 0.6em;
+  padding: 1em 0 0.6em;
   font-family: 'Kumbh Sans', sans-serif;
   color: #4a494a;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 form input::placeholder {
   color: #cfcfcf;
+}
+
+form select {
+  outline: none;
+  border: none;
+  background: none !important;
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  padding: 0.5em 0 0.6em;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #4a494a;
+  font-size: 0.9em;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border-radius: 0;
 }
 
 /******************* Header ****************/
@@ -612,6 +628,11 @@ main > section:nth-of-type(4) article {
   background-color: #F8F9FA;
   padding: 2em 1em;
   text-align: center;
+  transition: .4s ease;
+}
+
+main > section:nth-of-type(4) article:hover {
+  transform: scale(1.02);
 }
 
 main > section:nth-of-type(4) article:last-of-type {
@@ -635,6 +656,14 @@ main > section:nth-of-type(4) article h2:before {
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: .5em;
+}
+
+main > section:nth-of-type(4) article:nth-of-type(2) h2:before {
+  background-image: url(../images/shipping.svg) !important;
+}
+
+main > section:nth-of-type(4) article:nth-of-type(3) h2:before {
+  background-image: url(../images/warrenty.svg) !important;
 }
 
 main > section:nth-of-type(4) article p {
@@ -664,12 +693,55 @@ main > section:nth-of-type(5) h2:after {
 main > section:nth-of-type(5) p {
   text-align: center;
   margin-top: 2.2em;
+  max-width: 67ch;
+  margin: 2.2em auto 0;
+}
+
+main > section:nth-of-type(5) div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2em;
+}
+
+main > section:nth-of-type(5) div img {
+  width: 100%;
+  transition: .4s ease;
+  cursor: pointer;
+}
+
+main > section:nth-of-type(5) div img:hover {
+  opacity: 0.8;
 }
 
 /******************* Footer ****************/
 
+footer {
+  padding: 5em 1.1em;
+  max-width: 1280px;
+  margin: auto;
+  background: #F8F8F8;
+}
+
+footer form div {
+  margin-bottom: 1.5em;
+}
+
+footer form div:first-of-type {
+  margin-bottom: 5em;
+}
+
 /******************* Media Querries ****************/
 
+/* Smallest breakpoint */
+@media screen and (min-width: 400px) {
+  /* Instagram Posts */
+  main > section:nth-of-type(5) div {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  main > section:nth-of-type(5) div img:nth-of-type(5) {
+    display: none;
+  }
+}
 
 /* Breakpoint 1 */
 @media screen and (min-width: 640px) {
@@ -737,5 +809,13 @@ main > section:nth-of-type(5) p {
   main > section:nth-of-type(3) {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
+  }
+
+  /* Instagram Posts */
+  main > section:nth-of-type(5) div {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  main > section:nth-of-type(5) div img:nth-of-type(5) {
+    display: block;
   }
 }
