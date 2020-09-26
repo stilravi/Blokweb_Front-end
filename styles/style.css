@@ -602,6 +602,70 @@ main > section:nth-of-type(3) article a {
   z-index: 2;
 }
 
+main > section:nth-of-type(4) {
+  padding: 0 0 5em;
+  display: grid;
+  grid-row-gap: 1em;
+}
+
+main > section:nth-of-type(4) article {
+  background-color: #F8F9FA;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+main > section:nth-of-type(4) article:last-of-type {
+  margin-bottom: 0;
+}
+
+main > section:nth-of-type(4) article h2 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: .7em;
+}
+
+main > section:nth-of-type(4) article h2:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/paymentlove.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: .5em;
+}
+
+main > section:nth-of-type(4) article p {
+  font-size: 0.8em;
+}
+
+main > section:nth-of-type(5) {
+  padding: 0 0 5em;
+}
+
+main > section:nth-of-type(5) h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+main > section:nth-of-type(5) h2:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+  height: 2px;
+  width: 40px;
+  background: #dbdbdb;
+} 
+
+main > section:nth-of-type(5) p {
+  text-align: center;
+  margin-top: 2.2em;
+}
+
 /******************* Footer ****************/
 
 /******************* Media Querries ****************/
@@ -640,6 +704,11 @@ main > section:nth-of-type(3) article a {
 
   main > section:nth-of-type(2) div {
     padding: 12em 0;
+  }
+
+  main > section:nth-of-type(4) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
   }
 }
 
