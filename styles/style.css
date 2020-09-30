@@ -109,50 +109,22 @@ form select {
 
 /******************* Header ****************/
 
-header section:first-of-type {
-  height: calc(100vh - 6em);
-  background: url(../images/marcelo-douchebags-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-header section:first-of-type:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: calc(100vh - 6em);
-  background: rgba(0, 0, 0, 0.200);
+header {
+  position: sticky;
   top: 0;
-  left: 0;
-}
-
-header section:first-of-type h1,h4 {
-  color: white;
-  z-index: 2;
-  margin-bottom: .9em;
-}
-
-header section:first-of-type a {
-  color: white;
-  border-color: white;
-  z-index: 2;
+  background: white;
+  z-index: 999;
 }
 
 header nav {
   max-width: 1280px;
   margin: auto;
-  height: 6em;
+  height: 5em;
   padding: 0 1.1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: .4s ease;
 }
 
 header nav > img:first-of-type {
@@ -300,39 +272,78 @@ header > section#mobile-overlay {
   font-size: 0.8em;
 }
 
-*/****************** Main ****************/
+/****************** Top Section Homepage ****************/
 
-main {
+
+body > section:first-of-type {
+  height: calc(100vh - 6em);
+  background: url(../images/marcelo-douchebags-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body > section:first-of-type:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 6em);
+  background: rgba(0, 0, 0, 0.200);
+  top: 0;
+  left: 0;
+}
+
+body > section:first-of-type h1,h4 {
+  color: white;
+  z-index: 2;
+  margin-bottom: .9em;
+}
+
+body > section:first-of-type a {
+  color: white;
+  border-color: white;
+  z-index: 2;
+}
+
+/****************** Main Homepage ****************/
+
+main.home {
   padding: 0 1.1em;
   max-width: 1280px;
   margin: auto;
 }
 
-main > div {
+main.home > div {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
 }
 
-main > div section:first-of-type {
+main.home > div section:first-of-type {
   background: url(../images/marcelo-douchebags-02.jpg);
   background-position: center 20% !important;
 }
 
-main > div section:nth-of-type(2) {
+main.home > div section:nth-of-type(2) {
   background: url(../images/douchebags-hugger.jpg);
 }
 
-main > div section:nth-of-type(3) {
+main.home > div section:nth-of-type(3) {
   background: url(../images/douchebags-snow.jpg);
 }
 
-main > div section:nth-of-type(4) {
+main.home > div section:nth-of-type(4) {
   background: url(../images/douchebags-field.jpg);
 }
 
-main > div section:nth-child(-n+4) {
+main.home > div section:nth-child(-n+4) {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center center;
@@ -341,7 +352,7 @@ main > div section:nth-child(-n+4) {
   padding: 7em 1.1em;
 }
 
-main > div section:nth-child(-n+4):after {
+main.home > div section:nth-child(-n+4):after {
   content: "";
   position: absolute;
   width: 100%;
@@ -352,14 +363,14 @@ main > div section:nth-child(-n+4):after {
   z-index: 1;
 }
 
-main > div section:nth-child(-n+4) h2 {
+main.home > div section:nth-child(-n+4) h2 {
   color: white;
   z-index: 2;
   margin-bottom: 1.4em;
   position: relative;
 }
 
-main > div section:nth-child(-n+4) p {
+main.home > div section:nth-child(-n+4) p {
   color: white;
   z-index: 2;
   margin-bottom: 15px;
@@ -368,7 +379,7 @@ main > div section:nth-child(-n+4) p {
   font-size: 0.7em;
 }
 
-main > div section:nth-child(-n+4) a  {
+main.home > div section:nth-child(-n+4) a  {
   color: white;
   border-color: white;
   z-index: 2;
@@ -377,7 +388,7 @@ main > div section:nth-child(-n+4) a  {
 
 /* Product Articles */
 
-main > section:nth-of-type(1) {
+main.home > section:nth-of-type(1) {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-column-gap: 1em;
@@ -385,13 +396,13 @@ main > section:nth-of-type(1) {
   padding: 5em 0;
 }
 
-main > section:nth-of-type(1) h2 {
+main.home > section:nth-of-type(1) h2 {
   text-align: center;
   position: relative;
   grid-column: 1 / -1;
 }
 
-main > section:nth-of-type(1) h2:after {
+main.home > section:nth-of-type(1) h2:after {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -401,23 +412,23 @@ main > section:nth-of-type(1) h2:after {
   background: #dbdbdb;
 } 
 
-main > section:nth-of-type(1) p {
+main.home > section:nth-of-type(1) p {
   text-align: center;
   margin: auto;
   max-width: 50ch;
   grid-column: 1 / -1;
 }
 
-main > section:nth-of-type(1) article {
+main.home > section:nth-of-type(1) article {
   text-align: center;
 }
 
-main > section:nth-of-type(1) article ul {
+main.home > section:nth-of-type(1) article ul {
   position: absolute;
   list-style-type: none;
 }
 
-main > section:nth-of-type(1) article li {
+main.home > section:nth-of-type(1) article li {
   background: #7e7e7e;
   color: white;
   margin-top: 10px;
@@ -428,32 +439,32 @@ main > section:nth-of-type(1) article li {
   text-transform: uppercase;
 }
 
-main > section:nth-of-type(1) article li:first-of-type {
+main.home > section:nth-of-type(1) article li:first-of-type {
   padding: 3px 0;
   background: #532B5D;
 }
 
-main > section:nth-of-type(1) article li img {
+main.home > section:nth-of-type(1) article li img {
   width: 1em;
   margin-right: 5px;
 }
 
-main > section:nth-of-type(1) article figure {
+main.home > section:nth-of-type(1) article figure {
   padding: 40px 0;
   background-color: #f1f1f1;
   margin-bottom: 20px;
 }
 
-main > section:nth-of-type(1) article img {
+main.home > section:nth-of-type(1) article img {
   max-width: 100%;
 }
 
-main > section:nth-of-type(1) article h3 {
+main.home > section:nth-of-type(1) article h3 {
   margin-bottom: 1.8em;
   position: relative;
 }
 
-main > section:nth-of-type(1) article h3:last-of-type:after {
+main.home > section:nth-of-type(1) article h3:last-of-type:after {
   content: "";
   position: absolute;
   width: 80%;
@@ -463,18 +474,18 @@ main > section:nth-of-type(1) article h3:last-of-type:after {
   left: calc(50% - 40%);
 }
 
-main > section:nth-of-type(1) article > img {
+main.home > section:nth-of-type(1) article > img {
   width: 1em;
   display: block;
   margin: auto;
 }
 
-main > section:nth-of-type(2) {
+main.home > section:nth-of-type(2) {
   padding: 0 0 5em;
   position: relative;
 }
 
-main > section:nth-of-type(2) div {
+main.home > section:nth-of-type(2) div {
   background-image: url(../images/douchbags-black.jpg);
   background-position: center center;
   background-size: cover;
@@ -485,13 +496,13 @@ main > section:nth-of-type(2) div {
   align-items: center;
 }
 
-main > section:nth-of-type(2) a {
+main.home > section:nth-of-type(2) a {
   color: white;
   border-color: white;
   z-index: 2;
 }
 
-main > section:nth-of-type(2) article {
+main.home > section:nth-of-type(2) article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -499,20 +510,20 @@ main > section:nth-of-type(2) article {
   padding: 0 1.1em;
 }
 
-main > section:nth-of-type(2) h2 {
+main.home > section:nth-of-type(2) h2 {
   margin: 1em 0;
   flex-basis: 100%;
   text-align: center;
   font-size: 2em;
 }
 
-main > section:nth-of-type(2) p {
+main.home > section:nth-of-type(2) p {
   margin: 0 0 1.5em;
   flex-basis: 100%;
   text-align: center;
 }
 
-main > section:nth-of-type(2) ul {
+main.home > section:nth-of-type(2) ul {
   font-family: 'Kumbh Sans', sans-serif;
   color: #4a494a;
   font-size: 0.9em;
@@ -522,11 +533,11 @@ main > section:nth-of-type(2) ul {
   flex-basis: 100%
 }
 
-main > section:nth-of-type(2) li {
+main.home > section:nth-of-type(2) li {
   margin-bottom: .5em;
 }
 
-main > section:nth-of-type(2) li:before {
+main.home > section:nth-of-type(2) li:before {
   content: "";
   display: inline-block;
   width: .9em;
@@ -538,28 +549,28 @@ main > section:nth-of-type(2) li:before {
   margin-right: .5em;
 }
 
-main > section:nth-of-type(2) li:last-of-type:before {
+main.home > section:nth-of-type(2) li:last-of-type:before {
   background-image: url(../images/plus.svg);
   margin-bottom: 0;
   width: .7em;
   height: .7em;
 }
 
-main > section:nth-of-type(3) {
+main.home > section:nth-of-type(3) {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 1.1em;
   padding: 0 0 5em;
 }
 
-main > section:nth-of-type(3) h2 {
+main.home > section:nth-of-type(3) h2 {
   text-align: center;
   grid-column: 1 / -1;
   position: relative;
   margin-bottom: 1em;
 }
 
-main > section:nth-of-type(3) h2:after {
+main.home > section:nth-of-type(3) h2:after {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -569,7 +580,7 @@ main > section:nth-of-type(3) h2:after {
   background: #dbdbdb;
 } 
 
-main > section:nth-of-type(3) article {
+main.home > section:nth-of-type(3) article {
   padding: 8em 1.1em;
   background-repeat: no-repeat;
   background-size: cover;
@@ -581,7 +592,7 @@ main > section:nth-of-type(3) article {
   position: relative;
 }
 
-main > section:nth-of-type(3) article:after {
+main.home > section:nth-of-type(3) article:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -592,19 +603,19 @@ main > section:nth-of-type(3) article:after {
   z-index: 1;
 }
 
-main > section:nth-of-type(3) article:nth-of-type(1) {
+main.home > section:nth-of-type(3) article:nth-of-type(1) {
   background-image: url(../images/douchebags-photography.jpg);
 }
 
-main > section:nth-of-type(3) article:nth-of-type(2) {
+main.home > section:nth-of-type(3) article:nth-of-type(2) {
   background-image: url(../images/douchebags-bike.jpg);
 }
 
-main > section:nth-of-type(3) article:nth-of-type(3) {
+main.home > section:nth-of-type(3) article:nth-of-type(3) {
   background-image: url(../images/douchebags-ski.jpg);
 }
 
-main > section:nth-of-type(3) article h3 {
+main.home > section:nth-of-type(3) article h3 {
   flex-basis: 100%;
   text-align: center;
   color: white;
@@ -612,41 +623,41 @@ main > section:nth-of-type(3) article h3 {
   z-index: 2;
 }
 
-main > section:nth-of-type(3) article a {
+main.home > section:nth-of-type(3) article a {
   border-color: white;
   color: white;
   z-index: 2;
 }
 
-main > section:nth-of-type(4) {
+main.home > section:nth-of-type(4) {
   padding: 0 0 5em;
   display: grid;
   grid-row-gap: 1em;
 }
 
-main > section:nth-of-type(4) article {
+main.home > section:nth-of-type(4) article {
   background-color: #F8F9FA;
   padding: 2em 1em;
   text-align: center;
   transition: .4s ease;
 }
 
-main > section:nth-of-type(4) article:hover {
+main.home > section:nth-of-type(4) article:hover {
   transform: scale(1.02);
 }
 
-main > section:nth-of-type(4) article:last-of-type {
+main.home > section:nth-of-type(4) article:last-of-type {
   margin-bottom: 0;
 }
 
-main > section:nth-of-type(4) article h2 {
+main.home > section:nth-of-type(4) article h2 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
   font-size: 1em;
   margin-bottom: .7em;
 }
 
-main > section:nth-of-type(4) article h2:before {
+main.home > section:nth-of-type(4) article h2:before {
   content: "";
   display: inline-block;
   width: 1em;
@@ -658,29 +669,29 @@ main > section:nth-of-type(4) article h2:before {
   margin-right: .5em;
 }
 
-main > section:nth-of-type(4) article:nth-of-type(2) h2:before {
+main.home > section:nth-of-type(4) article:nth-of-type(2) h2:before {
   background-image: url(../images/shipping.svg) !important;
 }
 
-main > section:nth-of-type(4) article:nth-of-type(3) h2:before {
+main.home > section:nth-of-type(4) article:nth-of-type(3) h2:before {
   background-image: url(../images/warrenty.svg) !important;
 }
 
-main > section:nth-of-type(4) article p {
+main.home > section:nth-of-type(4) article p {
   font-size: 0.8em;
 }
 
-main > section:nth-of-type(5) {
+main.home > section:nth-of-type(5) {
   padding: 0 0 5em;
 }
 
-main > section:nth-of-type(5) h2 {
+main.home > section:nth-of-type(5) h2 {
   text-align: center;
   position: relative;
   margin-bottom: 1em;
 }
 
-main > section:nth-of-type(5) h2:after {
+main.home > section:nth-of-type(5) h2:after {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -690,36 +701,39 @@ main > section:nth-of-type(5) h2:after {
   background: #dbdbdb;
 } 
 
-main > section:nth-of-type(5) p {
+main.home > section:nth-of-type(5) p {
   text-align: center;
   margin-top: 2.2em;
   max-width: 67ch;
   margin: 2.2em auto 0;
 }
 
-main > section:nth-of-type(5) div {
+main.home > section:nth-of-type(5) div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 2em;
 }
 
-main > section:nth-of-type(5) div img {
+main.home > section:nth-of-type(5) div img {
   width: 100%;
   transition: .4s ease;
   cursor: pointer;
 }
 
-main > section:nth-of-type(5) div img:hover {
+main.home > section:nth-of-type(5) div img:hover {
   opacity: 0.8;
 }
 
 /******************* Footer ****************/
 
 footer {
-  padding: 5em 1.1em;
+  background: #F8F8F8;
+}
+
+footer > div {
+  padding: 5em 1.1em 0;
   max-width: 1280px;
   margin: auto;
-  background: #F8F8F8;
 }
 
 footer form div {
@@ -730,57 +744,125 @@ footer form div:first-of-type {
   margin-bottom: 5em;
 }
 
+footer section:first-of-type h3, footer section:nth-of-type(2) h3 {
+  display: none;
+}
+
+footer section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding: 2em 0;
+}
+
+footer section:first-of-type a {
+  text-align: center;
+  text-transform: none;
+  border-color: #dddddd;
+}
+
+footer section:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #dddddd;
+  padding: 2em 0;
+  margin-top: 1em;
+}
+
+footer section:nth-of-type(2) p {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 0.6em;
+  font-size: 0.75em;
+}
+
+footer section:nth-of-type(2) a {
+  border: none;
+  padding: 0 1em;
+  text-transform: none;
+  text-decoration: underline;
+}
+
+footer section:nth-of-type(2) a:hover {
+  background: none;
+  color: black;
+}
+
 /******************* Media Querries ****************/
 
 /* Smallest breakpoint */
 @media screen and (min-width: 400px) {
   /* Instagram Posts */
-  main > section:nth-of-type(5) div {
+  main.home > section:nth-of-type(5) div {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  main > section:nth-of-type(5) div img:nth-of-type(5) {
+  main.home > section:nth-of-type(5) div img:nth-of-type(5) {
     display: none;
   }
 }
 
 /* Breakpoint 1 */
 @media screen and (min-width: 640px) {
-  main > section:nth-of-type(1) {
+  header nav {
+    height: 6em;
+  }
+
+  main.home > section:nth-of-type(1) {
     grid-template-columns: repeat(3,1fr);
   }
 
-  main > div {
+  main.home > div {
     grid-template-columns: repeat(3,1fr);
   }
 
-  main > div section:first-of-type {
+  main.home > div section:first-of-type {
     grid-column: 1 / 3;
   }
   
-  main > div section:nth-of-type(2) {
+  main.home > div section:nth-of-type(2) {
     grid-column: 3 / 4;
   }
   
-  main > div section:nth-of-type(3) {
+  main.home > div section:nth-of-type(3) {
     grid-column: 1 / 2;
   }
 
-  main > div section:nth-of-type(4) {
+  main.home > div section:nth-of-type(4) {
     grid-column: 2 / 4;
   }
 
-  main > section:nth-of-type(2) {
+  main.home > section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  main > section:nth-of-type(2) div {
+  main.home > section:nth-of-type(2) div {
     padding: 12em 0;
   }
 
-  main > section:nth-of-type(4) {
+  main.home > section:nth-of-type(4) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1em;
+  }
+
+  footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer form {
+    flex-basis: 40%;
+  }
+
+  footer section:nth-of-type(1) {
+    flex-basis: 50%;
+  }
+
+  footer section:nth-of-type(2) {
+    flex-basis: 100%;
   }
 }
 
@@ -802,20 +884,20 @@ footer form div:first-of-type {
     display: none;
   }
   
-  main > section:nth-of-type(1) {
+  main.home > section:nth-of-type(1) {
     grid-template-columns: repeat(4,1fr);
   }
 
-  main > section:nth-of-type(3) {
+  main.home > section:nth-of-type(3) {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
   }
 
   /* Instagram Posts */
-  main > section:nth-of-type(5) div {
+  main.home > section:nth-of-type(5) div {
     grid-template-columns: repeat(5, 1fr) !important;
   }
-  main > section:nth-of-type(5) div img:nth-of-type(5) {
+  main.home > section:nth-of-type(5) div img:nth-of-type(5) {
     display: block;
   }
 }

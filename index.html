@@ -10,15 +10,16 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+	<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
+		<h4>From Rio to Madrid to everywhere</h4>
+		<h1>DB x Marcelo Vieira</h1>
+		<a href="#">Explore collection</a>
+	</section>
 	<header>
-		<section>
-			<h4>From Rio to Madrid to everywhere</h4>
-			<h1>DB x Marcelo Vieira</h1>
-			<a href="#">Explore collection</a>
-		</section>
 		<nav>
 			<img src="images/logo.svg">
 			<ul>
@@ -52,8 +53,8 @@
 			</div>
 		</section>
 	</header>
-	<main>
-		<div>
+	<main class="home">
+		<div data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<section>
 				<p>Available now</p>
 				<h2>DB x Marcelo Vieira</h2>
@@ -75,7 +76,7 @@
 				<a href="#">Read more</a>
 			</section>
 		</div>
-		<section>
+		<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<h2>New Arrivals</h2>
 			<p>On trips long and short, our Vieira Purple will give your bags the pop - and good luck - to stand out amongst the masses.</p>
 			<article>
@@ -139,7 +140,7 @@
 				<img>
 			</article>
 		</section>
-		<section>
+		<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<div>
 				<a href="#">Join now</a>
 			</div>
@@ -153,7 +154,7 @@
 				</ul>
 			</article>
 		</section>
-		<section>
+		<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<h2>Categories</h2>
 			<article>
 				<h3>Photography</h3>
@@ -168,7 +169,7 @@
 				<a>Explore</a>
 			</article>
 		</section>
-		<section>
+		<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<article>
 				<h2>Payment</h2>
 				<p>Pay with VISA, MasterCard, Klarna or PayPal in our secure checkout.</p>
@@ -182,7 +183,7 @@
 				<p>Pay with VISA, MasterCard, Klarna or PayPal in our secure checkout.</p>
 			</article>
 		</section>
-		<section>
+		<section data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
 			<h2>In The Wild</h2>
 			<p>Our gear is travel tested by some of the world's best athletes, adventures and creators. We are proud to 
 				support and share these meaningful journeys from the Db Family.
@@ -201,41 +202,64 @@
 			</div>
 		</section>
 	</main>
-	<footer>
-		<form>
-			<div>
-				<label for="email">Sign up to Db Black</label>
-				<input type="email" id="email" placeholder="Enter E-mail">
-			</div>
-			<div>
-				<label>Country</label>
-				<select name="country" id="country">
-					<option value="Australia">🇦🇺&emsp;Australia, AUD</option>
-					<option value="Austria">🇦🇹&emsp;Austria, EUR</option>
-					<option value="Belgium">🇧🇪&emsp;Belgium, EUR</option>
-					<option value="Canada">🇨🇦&emsp;Canada, CAD</option>
-					<option value="Denmark">🇩🇰&emsp;Denmark, DKK</option>
-					<option value="France">🇫🇷&emsp;France, EUR</option>
-					<option value="Germany">🇩🇪&emsp;Germany, EUR</option>
-					<option value="Italy">🇮🇹&emsp;Italy, EUR</option>
-					<option value="Netherlands" selected="selected">🇳🇱&emsp;Netherlands, EUR</option>
-					<option value="Norway">🇳🇴&emsp;Norway, NOK</option>
-					<option value="Spain">🇪🇸&emsp;Spain, EUR</option>
-					<option value="Sweden">🇸🇪&emsp;Sweden, SEK</option>
-					<option value="United Kingdom">🇬🇧&emsp;United Kingdom, GBP</option>
-					<option value="United States">🇺🇸&emsp;United States, USD</option>
-				</select>
-			</div>
-			<div>
-				<label>Language</label>
-				<select name="language" id="language">
-					<option value="Germany">🇩🇪&emsp;German</option>
-					<option value="United Kingdom" selected="selected">🇬🇧&emsp;English</option>
-				</select>
-			</div>
-		</form>
+	<footer data-aos="fade-up" data-aos-delay="200"  data-aos-easing="ease-out">
+		<div>
+			<form>
+				<div>
+					<label for="email">Sign up to Db Black</label>
+					<input type="email" id="email" placeholder="Enter E-mail">
+				</div>
+				<div>
+					<label>Country</label>
+					<select name="country" id="country">
+						<option value="Australia">🇦🇺&emsp;Australia, AUD</option>
+						<option value="Austria">🇦🇹&emsp;Austria, EUR</option>
+						<option value="Belgium">🇧🇪&emsp;Belgium, EUR</option>
+						<option value="Canada">🇨🇦&emsp;Canada, CAD</option>
+						<option value="Denmark">🇩🇰&emsp;Denmark, DKK</option>
+						<option value="France">🇫🇷&emsp;France, EUR</option>
+						<option value="Germany">🇩🇪&emsp;Germany, EUR</option>
+						<option value="Italy">🇮🇹&emsp;Italy, EUR</option>
+						<option value="Netherlands" selected="selected">🇳🇱&emsp;Netherlands, EUR</option>
+						<option value="Norway">🇳🇴&emsp;Norway, NOK</option>
+						<option value="Spain">🇪🇸&emsp;Spain, EUR</option>
+						<option value="Sweden">🇸🇪&emsp;Sweden, SEK</option>
+						<option value="United Kingdom">🇬🇧&emsp;United Kingdom, GBP</option>
+						<option value="United States">🇺🇸&emsp;United States, USD</option>
+					</select>
+				</div>
+				<div>
+					<label>Language</label>
+					<select name="language" id="language">
+						<option value="Germany">🇩🇪&emsp;German</option>
+						<option value="United Kingdom" selected="selected">🇬🇧&emsp;English</option>
+					</select>
+				</div>
+			</form>
+			<section>
+				<h3>Usefull links</h3>
+				<a>Home</a>
+				<a>Help Centra</a>
+				<a>Shop</a>
+				<a>Warranty</a>
+				<a>Stories</a>
+				<a>Returns</a>
+				<a>About</a>
+				<a>Careers</a>
+				<a>Db Pro</a>
+				<a>Retailers</a>
+			</section>
+			<section>
+				<h3>Other information</h3>
+				<p>2020, Douchebags. All rights reserverd</p>
+				<a>Terms & Douchebags</a>
+				<a>Privacy Statement</a>
+			</section>
+		</div>
 	</footer>
 	<script src="scripts/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 	
 </html>
