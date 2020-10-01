@@ -30,8 +30,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Wat ging goed?
+- Het responsive maken van alle elementen ging echt super met CSS grid 🙂! 
+- Het gebruik maken van de Media Querries ging ook erg goed en soepel.
+- De Navigatie sticky maken voor de surface plane.
+- Toevoegen van inkomende animaties tijdens het scrollen. (Hier ga ik het nog over hebben met Joost vrijdag 02-10)
+- Alles is nu omgezet van Pixels naar Em.
+
+Wat ging minder goed?
+- Ik twijfel over sommige elementen of ik wel het <pre><article></pre> element goed gebruikt hebt.
+
+**Screenshot(s):**
+
+- [Screenshot 1 - Homepagina Mobiel (af)](images/readme/week5/mobiel-af.jpg)
+- [Screenshot 2 - Homepagina Desktop (af)](images/readme/week5/desktop-af.jpg)
 
 
 ## Voortgang 1 (week 3)
