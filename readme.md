@@ -57,6 +57,7 @@ omdat het best goed gaat bij iedereen.
 - Blok boven Nav in Header of niet?
 
 
+
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
