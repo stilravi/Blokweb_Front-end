@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  outline: 0;
+  /* outline: 0; */
 }
 
 a {
@@ -76,7 +76,7 @@ form label {
 }
 
 form input {
-  outline: none;
+  /* outline: none; */
   border: none;
   background: none !important;
   border-bottom: 1px solid #dddddd;
@@ -92,7 +92,7 @@ form input::placeholder {
 }
 
 form select {
-  outline: none;
+  /* outline: none; */
   border: none;
   background: none !important;
   border-bottom: 1px solid #dddddd;
