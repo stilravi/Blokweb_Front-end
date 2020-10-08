@@ -48,6 +48,7 @@ het bij iedereen wel aardig lukt. De agenda punten zijn als volgt:
 
 - Toelichting MediaQueries (Latisha)
 - Toegankelijkheid in Safari werkt niet goed (Ravi)
+- For Each javascript (Ravi)
 
 
 ## Voortgang 2 (week 5)
