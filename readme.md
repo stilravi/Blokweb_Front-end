@@ -24,8 +24,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+Wat ging goed?
+- Toegankelijkheid functies toepassen is aardig gelukt.
+- Schoonmaken van code en onnodige code verwijderen.
+
+Wat ging minder goed?
+- Deze week heb ik niet heel veel vooruitgang kunnen boeken door veel deadlines van andere vakken.
+In de aankomende week wil ik dat weer helemaal inhalen.
+
+
+**Screenshot(s):**
+
+- [Screenshot 1 - Homepagina Mobiel (af)](images/readme/week5/mobiel-af.jpg)
+- [Screenshot 2 - Homepagina Desktop (af)](images/readme/week5/desktop-af.jpg)
+
+
+### Agenda voor meeting
+
+Wij hebben weer samen met groep "C" een gezamelijke agenda gemaakt. Hierin staan weinig punten omdat
+het bij iedereen wel aardig lukt. De agenda punten zijn als volgt:
+
+- Toelichting MediaQueries (Latisha)
+- Toegankelijkheid in Safari werkt niet goed (Ravi)
 
 
 ## Voortgang 2 (week 5)
