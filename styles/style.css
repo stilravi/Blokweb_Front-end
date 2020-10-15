@@ -132,6 +132,7 @@ header {
   top: 0;
   background: white;
   z-index: 999;
+  box-shadow: 0px 3px 15px -11px rgba(0,0,0,0.33);
 }
 
 header nav {
@@ -555,6 +556,12 @@ main.home > section:nth-of-type(1) article button:hover svg {
 main.home > section:nth-of-type(1) #shoppingCartOverlay {
   opacity: 0;
   transition: .4s ease;
+  position: absolute;
+  z-index: -99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 main.home > section:nth-of-type(1) #shoppingCartOverlay.visible {
@@ -569,12 +576,50 @@ main.home > section:nth-of-type(1) #shoppingCartOverlay.visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1em;
+  transition: .4s ease;
 }
 
 main.home > section:nth-of-type(1) #shoppingCartOverlay section  {
   background-color: white;
   padding: 4em;
+  position: relative;
 }
+
+main.home > section:nth-of-type(1) #shoppingCartOverlay section p {
+  margin: 4em 0 2em;
+}
+
+main.home > section:nth-of-type(1) #shoppingCartOverlay section a {
+  margin-top: 3.5em;
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 18em;
+}
+
+main.home > section:nth-of-type(1) #shoppingCartOverlay section button {
+  padding: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  border: none;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+main.home > section:nth-of-type(1) #shoppingCartOverlay section button:hover {
+  background: none;
+  transform: rotate(90deg);
+}
+
+main.home > section:nth-of-type(1) #shoppingCartOverlay section button img {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+
 
 main.home > section:nth-of-type(2) {
   padding: 0 0 5em;

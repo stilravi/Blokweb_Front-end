@@ -23,15 +23,22 @@ function closeMobileMenu() {
 
 // Winkelmand functies
 
-var mobileOverlayBlock = document.querySelector('#shoppingCartOverlay section');
-var mobileOverlay = document.querySelector('#shoppingCartOverlay');
+var cartOverlayBlock = document.querySelector('#shoppingCartOverlay section');
+var cartOverlay = document.querySelector('#shoppingCartOverlay');
+var cartOverlayText= document.querySelector('#shoppingCartOverlay p strong');
+var cartOverlayCloseButton= document.querySelector('#shoppingCartOverlay button');
 
 function addOverlay() {
-    mobileOverlay.classList.add('visible');
+    cartOverlay.classList.add('visible');
+    cartOverlayText.textContent = cart;
+}
+
+function removeOverlay() {
+    cartOverlay.classList.remove('visible');
 }
 
 shoppingCartButton.addEventListener('click', addOverlay);
-
+cartOverlayCloseButton.addEventListener('click', removeOverlay);
 
 addToCartButtons.forEach(button => {
     button.addEventListener('click', (event) => {
@@ -46,6 +53,7 @@ function updateCart() {
         cartText.textContent = cart;
     }
 }
+
 
 
 // Event Listeners van mobiele menu
