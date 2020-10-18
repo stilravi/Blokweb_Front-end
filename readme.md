@@ -14,6 +14,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
+### Wat ging ging en wat ging minder goed?
+
 Wat ging goed?
 - 
 
