@@ -14,7 +14,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Wat ging goed?
+- 
 
 **Screenshot(s):**
 
