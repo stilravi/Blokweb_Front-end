@@ -18,7 +18,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+- [Screenshot 1 - Homepagina Mobiel (af)](images/readme/eind/home-mobile.jpg)
+- [Screenshot 2 - Homepagina Desktop (af)](images/readme/eind/home-desktop.jpg)
+- [Screenshot 3 - About pagina Mobiel (af)](images/readme/eind/about-mobile.jpg)
+- [Screenshot 4 - About pagina Desktop (af)](images/readme/eind/about-desktop.jpg)
 
 
 
