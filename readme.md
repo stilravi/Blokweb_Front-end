@@ -17,7 +17,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Wat ging ging en wat ging minder goed?
 
 Wat ging goed?
-- 
+- Het responsive maken van elementen met CSS Grid & Flexbox (ook Media Queries).
+- JavaScript functies uitwerken zoals het Menu en de Winkelmand.
+- CSS specifieke selectoren gebruiken zoals bijvoorbeeld `:nth-of-type()` en `:nth-child()`.
+- Juiste waarden gebruiken in de CSS zoals Em en %. (Geen pixels)
+- CSS hover effects op buttons en linkjes.
+
+Wat ging minder goed?
+- De juiste semantische HTML5 tags gebruiken. Ik twijfelde soms welke tags nou precies goed waren voor welke content.
+- Bij de JavaScript functie QuerySelectorAll had ik wat hulp nodig van Sam om alle knoppen werkend te krijgen.
+- Aan het eind was er iets tussen gekomen waardoor ik heel lichtjes in tijd nood kwam waardoor ik het eindgesprek ietsjes moest
+verzetten 😉.
+- Ik had eigenlijk nog SVG animaties willen toevoegen maar dat is niet meer gelukt helaas.
 
 **Screenshot(s):**
 
